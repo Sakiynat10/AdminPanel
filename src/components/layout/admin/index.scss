@@ -1,0 +1,55 @@
+.ant-layout{
+    height: 100vh;
+    &-content{
+        height: calc(100vh - 64px);
+        padding: 0 !important;
+        overflow-y: scroll;
+        overflow-x: scroll;
+        @media(min-width:1200px) {
+            overflow-x: visible;
+            color: rgb(0, 157, 255);
+        }
+        .ant-spin-container{
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+    }
+    .ant-menu-item:first-child{
+        margin-bottom: 30px;
+    }
+}
+
+.mode .ant-table{
+    box-shadow: 1px 1px 20px 1px #fff;
+}
+
+.mode , .mode .ant-layout , .mode .ant-layout-header ,.mode .ant-layout-content , .mode .dashboard , .mode .info-left , .mode .info-right{
+    background-color: rgb(1, 1, 23) !important;
+    color: white !important;
+}
+
+.mode .ant-statistic , .mode .marry-info , .mode .card-salary , .mode .ant-table , .mode .ant-btn , .mode .ant-table-thead , .mode .table-layout{
+    background-color: rgb(3, 3, 34) !important;
+}
+
+.mode span , .mode .ant-statistic-title , .mode .ant-table , .mode .ant-typography , .mode .ant-result-title , .mode .ant-result-subtitle {
+    color: white !important;
+}
+
+.mode .ant-table-cell-row-hover , .mode .ant-select-selection-item{
+    color: #000 !important;
+}
+
+.mode .ant-table{
+    background-color: rga !important;
+}
+
+.header{
+    box-shadow:2px 2px 10px gray;
+    z-index:2;
+}
+
+.teacher-img{
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px gray;
+}

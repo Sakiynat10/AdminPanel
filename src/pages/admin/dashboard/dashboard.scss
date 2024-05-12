@@ -1,0 +1,216 @@
+.ant-statistic-title {
+  font-size: 24px !important;
+}
+
+.dashboard {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .infos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (min-width: 1240px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  .info-tables{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    .info-left,
+    .info-right {
+      min-width: 550px !important;
+      box-shadow: 3px 3px 10px #254000;
+      background-color: #fcffe6;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+
+      .statistics,
+      .marry-info {
+        box-shadow: 2px 2px 5px gray;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        .single-text {
+          color: rgb(0, 119, 255) !important;
+        }
+      }
+      .age-info {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .marry-info {
+        .ant-progress{
+          .ant-progress-text{
+            color: rgb(0, 255, 0) !important;
+          }
+        }
+        .ant-progress:nth-child(2){
+            .ant-progress-text{
+                color: rgb(0, 119, 255) !important;
+            }
+        }
+        .ant-progress-circle-path{
+          color: red !important;
+          background-color: red !important;
+        }
+      }
+    }
+    .card-salary{
+      position: relative;
+      width: 320px;
+      height: 100px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px 3px gray;
+      padding: 20px;
+      .salary-title{
+        position: absolute;
+        top: 10px;
+        color: gray;
+        font-size: 16px;
+        right: 10px;
+      }
+      .money-card , .money-card-fee{
+        position: absolute;
+        top: -10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 53, 2);
+        font-size: 40px;
+      }
+      .money-card-fee{
+        background-color: rgb(4, 208, 4);
+      }
+      .statistics{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        right: 10px;
+        bottom: 20px;
+      }
+    }
+
+  }
+  }
+}
+
+.table-teacher{
+  min-width: 1200px;
+}
+
+
+.ring-content{
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100%;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background:#262626;
+  transition: 1s;
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#fff000;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #fff000;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #fff000;
+  border-right:3px solid #fff000;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#fff000;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #fff000;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+}
+
+.none{
+  opacity: 0;
+  z-index: -1;
+}
